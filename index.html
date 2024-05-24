@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiler.art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon”>
+    <style>
+        #imagecontainer {
+            background-image: url('./s1.jpg');
+        }
+    </style>
+</head>
+<body>
+    <header id="top" class="bg-[#272A34] shadow-sm w-[70%] h-26 md:rounded-b-xl z-[99] absolute top-0 left-1/2 transform -translate-x-1/2 flex items-start justify-start">
+        <img src="./logo.png" alt="logo" class="invert w-20 h-16 self-center ml-4 m-2">
+        <div class="flex items-center justify-center w-[5%] h-full m-2 ml-4">
+            <p class="text-[#E9DED8] m-3 ml-6 text-2xl font-bold text-center">Tiler.art</p>
+        </div>
+        <div class="hidden md:flex absolute items-end justify-center bottom-2 left-[65%] transform -translate-x-[75%] w-[30%]">
+            <a href="#section1" class="m-1 mr-4 text-[#E9DED8] text-lg font-bold whitespace-nowrap">O nas</a>
+            <a href="#section2" class="m-1 mr-4 text-[#E9DED8] text-lg font-bold whitespace-nowrap">Wykonania</a>
+            <a href="#section3" class="m-1 mr-4 text-[#E9DED8] text-lg font-bold whitespace-nowrap">Kontakt</a>
+        </div>
+        <div class="social-icons flex justify-end items-center self-end absolute right-3 bottom-2">
+            <a href="https://www.facebook.com" target="_blank" class="text-[#E9DED8] mx-2">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-[#E9DED8] mx-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.google.com" target="_blank" class="text-[#E9DED8] mx-2">
+                <i class="fab fa-google"></i>
+            </a>
+        </div>
+        <div class="flex md:hidden absolute items-end justify-start bottom-2 left-3 w-[90%]">
+            <div class="relative">
+                <button id="toggleButton" class="focus:outline-none text-[#E9DED8]">
+                    <i class="fas fa-bars "></i>
+                </button>
+                <div id="dropdownMenu" class="hidden absolute bg-[#272A34] text-[#E9DED8] transform -translate-x-3 p-2 mt-1 rounded-b-md">
+                    <a href="#section1" class="block py-1">O nas</a>
+                    <a href="#section2" class="block py-1">Wykonania</a>
+                    <a href="#section3" class="block py-1">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <a class="fixed right-3 bottom-14 text-[#E9DED8] z-50 hover:scale-125 transition-transform" href="#top">
+        <i class="fa-solid fa-angles-up fa-3x"></i>
+      </a>
+
+<section id="section1" class="drop-shadow-2xl z-40 bg-cover bg-center bg-[url('./1.jpg')] h-60 md:h-[50em] relative flex items-center justify-center">
+    <div class="text-white bg-black bg-opacity-25 font-bold text-center contrast-150 saturate-150 relative mt-12 md:mt-0 w-[100%]">
+        <p class="text-2xl md:text-3xl lg:text-4xl">Twoje wybrane wnętrzne jest możliwe z nami</p>
+        <a href="mailto:testowy@gmail.com" class="text-xl md:text-2xl lg:text-3xl mt-2 underline">Napisz do nas</a>
+    </div>
+</section>
+
+<section class="drop-shadow-lg bg-[#B7A997] z-30 relative">
+    <div class="container mx-auto py-8 text-center">
+        <p class="text-slate-200 font-bold text-lg md:text-2xl lg:text-3xl mb-8">
+            Wykończenie Mieszkania na Miarę Twoich Marzeń
+        </p>
+        <p class="text-slate-300 text-base md:text-lg lg:text-xl">
+            Szukasz fachowej pomocy w wykończeniu swojego mieszkania? Jesteśmy tutaj, aby Ci pomóc! Nasza firma specjalizuje się w kompleksowych usługach wykończeniowych, zapewniając klientom najwyższą jakość i indywidualne podejście. Współpracujemy z Tobą na każdym etapie, starając się zrozumieć Twoje potrzeby i oczekiwania. Naszym celem jest stworzenie dla Ciebie przestrzeni, która odzwierciedla Twój styl życia i spełnia Twoje marzenia o idealnym domu. Zaufaj nam, aby sprawić, że Twoje mieszkanie stanie się miejscem, którego będziesz dumny.
+        </p>
+    </div>
+</section>
+<section id="section2" class="flex flex-col md:flex-row w-full h-auto z-20 relative drop-shadow-xl">
+    <div id="imagecontainer" class="md:w-3/5 h-[60vh] md:h-auto bg-cover bg-center relative select-none drop-shadow-xl shadow-black md:drop-shadow-none z-[19]">
+        <span onclick="leftArrow()" class="absolute left-4 top-1/2 text-black shadow-sm text-[3em] cursor-pointer">&#10094;</span>
+        <span onclick="rightArrow()" class="absolute right-4 top-1/2 text-black shadow-sm text-[3em] cursor-pointer">&#10095;</span>
+        <div class="flex justify-center items-center absolute w-full h-[100px] bottom-2 md:bottom-4 bg-gray-400 bg-opacity-[0.65]">
+            <span onclick="updateState(this.id)" id="1" class="mx-2 h-6 w-6 rounded-full  border-2 border-black inline-block cursor-pointer shadow-lg"></span>
+            <span onclick="updateState(this.id)" id="2" class="mx-2 h-6 w-6 rounded-full  border-2 border-black inline-block cursor-pointer shadow-lg"></span>
+            <span onclick="updateState(this.id)" id="3" class="mx-2 h-6 w-6 rounded-full  border-2 border-black inline-block cursor-pointer shadow-lg"></span>
+            <span onclick="updateState(this.id)" id="4" class="mx-2 h-6 w-6 rounded-full  border-2 border-black inline-block cursor-pointer shadow-lg"></span>
+        </div>
+    </div>
+    <div class="bg-[#495069] w-full max-w-full md:w-auto md:max-w-[50%] h-full container py-16 md:py-14 px-4 text-center md:text-left order-1 md:order-2 shadow-lg drop-shadow-lg flex items-center relative z-[18]">
+        <div>
+            <p class="text-slate-200 font-bold text-lg md:text-2xl lg:text-3xl mb-4 mt-2">Nasze wykonania</p>
+            <br>
+            <p class="text-slate-300 text-base text-md md:text-xl lg:text-2xl">
+                Odkryj wyjątkowe możliwości wykończeń, które nadadzą Twoim pomieszczeniom niepowtarzalny charakter. Nasze bogactwo wariantów pozwoli Ci stworzyć idealne wnętrze, dopasowane do Twoich preferencji i stylu życia. Od klasycznej elegancji po nowoczesną śmiałość - odkryj inspirujące rozwiązania już dziś.
+            </p>
+            <ul class="px-6 text-md md:text-xl lg:text-2xl list-disc text-slate-300 mt-32 md:mt-56">
+                <li><p class="font-bold">Remonty mieszkań i domów:</p> Kompleksowe usługi remontowe, w tym malowanie, układanie podłóg, montaż okien i drzwi, oraz inne prace wykończeniowe.</li>
+                <br>
+                <li><p class="font-bold">Instalacje hydrauliczne:</p> Montaż naprawa i konserwacja instalacji wodno-kanalizacyjnych w domach, mieszkaniach, biurach i innych budynkach.</li>
+                <br>
+                <li><p class="font-bold">Modernizacja łazienek i kuchni:</p> Projektowanie i wykonawstwo nowoczesnych i funkcjonalnych łazienek i kuchni.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="section3" class="flex z-10 relative w-full h-[30vh] flex-row">
+    <div class="bg-[#A39CA3] w-[50%] h-full flex items-center relative flex-col text-slate-100 drop-shadow-md">
+        <p class="text-justify text-sm md:text-2xl mt-3 p-2">
+            Skontaktuj się z nami w sprawie oferty:
+        </p>
+        <br>
+        <div class="w-full flex justify-start items-center md:ml-[25vw] relative mb-6 mt-6 text-slate-200 ">
+            <i class="fas fa-envelope ml-2 fa-2x"></i>
+            <a class="text-xs md:text-lg ml-2 underline underline-offset-2 active:text-slate-300" href="mailto:testowy@gmail.com">testowy@gmail.com</a>
+        </div>
+        <br>
+        <div class="w-full flex justify-start items-center md:ml-[25vw] relative text-slate-200">
+            <i class="fas fa-phone-alt ml-2 fa-2x"></i>
+            <a class="text-xs md:text-lg ml-2 underline underline-offset-2 active:text-slate-300" href="tel:+48000000000">+48000000000</a>
+        </div>
+    </div>
+<div class="bg-[#C2B49B] w-[50%] h-full">
+
+</div>
+</section>
+<footer class="h-[32vh] w-full bg-[#272A34] z-[9] relative flex flex-row">
+<div class="text-gray-400 text-base w-full h-full p-2 flex md:items-start items-center flex-col">
+    <img class="md:w-[8vw] md:h-[12vh] w-[16vw] h-[14vh] invert border-b-2 border-black" src="logo.png" alt="logo">
+    <p class="ml-2 mt-1">tiler.art</p>
+    <p class="ml-2 mt-1">Trójmiasto</p>
+    <p class="ml-2 mt-1">adres firmy</p>
+    <p class="ml-2 mt-1">+48000000000</p>
+    <p class="ml-2 mt-1">testowy@gmail.com</p>
+</div>
+</footer>
+<section class="h-[6vh] w-full bg-[#121318] z-[8] relative flex">
+    <div class="social-icons flex justify-center items-center self-end absolute bottom-2 md:left-1/2 md:tranform md:-translate-x-1/2">
+        <a href="https://www.facebook.com" target="_blank" class="text-[#E9DED8] mx-2">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-[#E9DED8] mx-2">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.google.com" target="_blank" class="text-[#E9DED8] mx-2">
+            <i class="fab fa-google"></i>
+        </a>
+    </div>
+    <div class="bottom-0 absolute right-3 text-gray-400 font-bold md:text-sm text-xs">
+        <p>
+            Copyright <i class="fa-regular fa-copyright"></i> Tiler.Art 2024
+        </p>
+        <p>
+            Strona stworzona przez Jakub Podbielski
+        </p>
+    </div>
+</section>
+<script src="slajd.js" defer>
+</script>
+<script>
+    document.getElementById('toggleButton').addEventListener('click', function() {
+        document.getElementById('dropdownMenu').classList.toggle('hidden');
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
